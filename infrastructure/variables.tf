@@ -12,3 +12,8 @@ variable "environment" {
   type = string
   default = "development"
 }
+
+variable "enable_istio_addon" {
+  type = bool
+  default = false
+}
