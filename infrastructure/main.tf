@@ -15,7 +15,17 @@ resource "azurerm_kubernetes_cluster" "aks" {
   default_node_pool {
     name       = "default"
     node_count = 3
-    vm_size    = "Standard_B2s"
+    vm_size    = var.enable_istio_addon ? "Standard_B2ms" : "Standard_B2s"
+  }
+
+  dynamic "service_mesh_profile" {
+    for_each = var.enable_istio_addon ? [1] : []
+
+    content {
+      mode                             = "Istio"
+      internal_ingress_gateway_enabled = true
+      external_ingress_gateway_enabled = true
+    }
   }
 
   identity {
