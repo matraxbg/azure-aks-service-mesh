@@ -6,7 +6,7 @@ A service mesh is a dedicated infrastructure layer that controls service-to-serv
 ![istio-architecture](images/istio-architecture.svg)
 
 The service mesh is split into the following:
-- a data plane - composed of Envoy proxies, deployed as side
+- a data plane - composed of Envoy proxies, deployed as a sidecar
 - a control plane - manages and configures the proxies to route traffic
 
 ### Components
