@@ -254,4 +254,4 @@ Try accessing the URL `http://<INGRESS_HOST>:<INGRESS_PORT>/productpage`
 - [Istio AKS addon](https://learn.microsoft.com/en-us/azure/aks/istio-about)
 - [Deploy Istio AKS addon](https://learn.microsoft.com/en-us/azure/aks/istio-deploy-addon)
 - [Deploy Istio AKS ingress](https://learn.microsoft.com/en-us/azure/aks/istio-deploy-ingress)
-- [Bookinfo with a Virtual Machine](https://istio.io/latest/docs/examples/virtual-machines/)
+- [Istio tasks](https://istio.io/latest/docs/tasks/)
