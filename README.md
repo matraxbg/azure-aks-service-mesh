@@ -53,7 +53,7 @@ Security in Istio involves multiple components:
 - config API server that distributes the following to the proxies:
   - authentication policies
   - authorization policies
-  - secure naming information
+  - secure naming information - maps server identities to service names. Server identities are encoded in certificates, but service names are retrieved through the discovery service or DNS.
 - sidecars work as policy enforcments points (PEPs) to secure communication between clients and servers
 
 Basically the control plane handles the configruation from the API server and configures the PEPs in the data plane.
